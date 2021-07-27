@@ -14,6 +14,10 @@ public class GridAdapter extends BaseAdapter {
             R.drawable.lovesong, R.drawable.mank, R.drawable.marainey, R.drawable.minari, R.drawable.newoftheworld,
             R.drawable.nomadland, R.drawable.octopus, R.drawable.overthemoon, R.drawable.pieces, R.drawable.promising,
             R.drawable.quovadis, R.drawable.shaun, R.drawable.sound, R.drawable.thefather, R.drawable.trial};
+    String[] posterNames = {"어나더 라운드", "유다 그리고 블랙 메시아", "크립 캠프", "유로비전 송 콘테스트", "힐빌리의 노래",
+                            "러브 송 포 라타샤", "맹크", "마 레이니, 그녀가 블루스", "미나리", "뉴스 오브 더 월드",
+                            "노매드랜드", "나의 문어 선생님", "오버 더 문", "그녀의 조각들", "프라미싱 영 우먼",
+                            "쿠오바디스, 아이다", "숀더쉽 더 무비", "사운드 오브 메탈", "더 파더", "트라이얼 오브 더 시카고7"};
     public GridAdapter(Context context){
         this.context= context;
     }
@@ -48,7 +52,7 @@ public class GridAdapter extends BaseAdapter {
                 View dialogView = View.inflate(context, R.layout.dialog1, null);
                 ImageView imgvLarge = dialogView.findViewById(R.id.imgv_large);
                 imgvLarge.setImageResource(posterIds[pos]);
-                dialog.setTitle("Large Poster");
+                dialog.setTitle(posterNames[pos]);
                 dialog.setIcon(R.drawable.movie_icon);
                 dialog.setView(dialogView);
                 dialog.setNegativeButton("close", null);

@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("2021 아카데미 영화 포스터");
+        setTitle("2021 아카데미 노미네이트 영화 포스터");
         grid1 = findViewById(R.id.grid1);
         GridAdapter adapter = new GridAdapter(this);
         grid1.setAdapter(adapter);
